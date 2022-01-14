@@ -1,7 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Create Post{% endblock %}
 
 {% block content %}
-    <h1>Hello this is a test</h1>
+    <h1 align="center">Make a Post</h1>
+    <form method="POST" class="mb-2" >
+        <textarea name="text" id="text" class="form-control mb-2"></textarea>
+        <div align="center">
+            <button class="btn btn-lg btn-primary" type="submit">Post</button> 
+            <a href="/home"><button type="button" class="btn btn-lg btn-secondary">Back</button></a>
+        </div>
+    </form>
+    
 {% endblock %}
